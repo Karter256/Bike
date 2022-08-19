@@ -16,6 +16,12 @@ ul{
     padding: 0;
     list-style: none;
 }
+
+p{
+    margin: 0;
+
+}
+
 li{
     padding-left: 0;
 }
@@ -198,4 +204,53 @@ padding-left: 10px;
 
 .info__item-text{   
     max-width: 450px;
+}
+
+.char{
+    margin-bottom: 150px;
+}
+
+.char__head{
+    margin: 0 0 40px;
+    line-height: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.char__inner{
+    display: flex;
+}
+
+.char__img{
+    align-self: center;
+}
+
+.char__items{
+    flex-basis: 570px; 
+    margin-right: 60px;
+}
+.char__list + .char__list{
+    padding-top: 30px;
+}
+
+.char__title{
+padding: 2px 0 3px;
+text-transform: uppercase;
+background-color: var(--primary-color);
+color: var(--background-color);
+font-weight: 700; 
+}
+
+.char__line{
+    display: flex;
+    padding-top: 5px;
+}
+
+.char__name{
+    flex-basis: 285px;
+    padding-right: 25px;
+}
+
+.char__desc{
+    flex-basis: 285px;
 }
