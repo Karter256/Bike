@@ -64,4 +64,105 @@ padding-left: 10px;
     background-color: var(--primary-color);
 }
 
-/* продолжить с 1:00:00 */
+.bike{
+    padding: 100px 0 150px;
+}
+
+.bike__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike__column-slider{
+    flex-basis: 630px;
+    max-width: 630px;
+    margin-left: 30px;
+}
+
+.bike__title{
+    font-weight: 700;
+    line-height: 77px;
+    font-size: 64px;
+    margin: 60px 0 5px;
+}
+
+.bike__subtitle{
+    margin: 0 0 60px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.bike__text{
+    margin-bottom: 20px;
+    max-width: 420px;
+}
+
+.bike__link{
+    margin-top: 80px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 28px 81px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.bike__slider .slick-dots{
+    right:0;
+    top: 52px;
+
+}
+
+.slick-dots{
+    position:absolute;
+}
+
+.slick-dots li +li{
+    padding-top: 10px;
+}
+.slick-dots button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: var(--primary-color);
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition:  all 0.3s;
+}
+
+.slick-dots button:hover, 
+.slick-active button{
+    background-color: var(--hover-color);
+}
+
+.bike__list{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bike__list-item{
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 58px;
+}
+
+.bike__list-num{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.bike__list-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: auto 0;
+}
