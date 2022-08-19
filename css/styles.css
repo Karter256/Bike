@@ -255,8 +255,9 @@ font-weight: 700;
     flex-basis: 285px;
 }
 
+
 .slider{
-margin-bottom: -50px;
+margin-bottom: 50px;
 }
 
 .slider__items .slick-dots{
@@ -267,3 +268,104 @@ margin-bottom: -50px;
 .slider__item{
     padding-left: 50px;
 }
+
+.price{
+    margin-bottom: 100px;
+}
+
+.form{
+max-width: 420px;
+}
+.price__inner{
+    position: relative;
+}
+.form__title{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+}
+.form__text{
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.form__input-name, 
+.form__input-phone{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form__input-name::placeholder,
+ .form__input-phone::placeholder,
+ .form__input-text{
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+.form__input-text{
+    margin-bottom: 10px;
+}
+
+.form__label-box{
+display: flex;
+}
+
+.form__label + .form__label{
+    margin-left: 23px;
+    margin-bottom: 50px;
+}
+
+.form__input-radio{
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect (0 0 0 0);
+}
+
+.form__bike{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form__radio-style{
+    border-radius: 30px;
+    width: 80px;
+    height: 12px;
+
+}
+.form__input-radio:checked + .form__bike{
+    display: block;
+}
+
+.form__radio-style-grey{  
+    background: var(--secondary-color);
+}
+.form__radio-style-white{
+    background: var(--background-color);
+    border: 1px solid var(--secondary-color);
+
+}
+.form__radio-style-red{
+ background: var(--hover-color);
+}
+
+.form__btn{
+    background-color: var(--primary-color);
+    padding: 28px 81px;
+    border: none;
+    color: var(--background-color);
+    font-size: 20px;
+    letter-spacing: 1.1em;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+/* Resume 1:27:00 */
