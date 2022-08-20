@@ -11,6 +11,10 @@
     --hover-color: #ff4040;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -71,7 +75,7 @@ padding-left: 10px;
 }
 
 .bike{
-    padding: 100px 0 150px;
+    padding: 100px 0 0px;
 }
 
 .bike__inner{
@@ -110,11 +114,16 @@ padding-left: 10px;
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--background-color);
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     letter-spacing: 1.1em;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 24px;
+    transition: all 0.3s;
+}
+
+.bike__link:hover{
+    background-color: var(--hover-color);
 }
 
 .bike__slider .slick-dots{
@@ -174,7 +183,8 @@ padding-left: 10px;
 }
 
 .info{
-    margin-bottom: 150px;
+    padding-top: 150px;
+    margin-bottom: 50px;
 }
 
 .info__inner{
@@ -208,6 +218,7 @@ padding-left: 10px;
 
 .char{
     margin-bottom: 150px;
+    padding-top: 100px;
 }
 
 .char__head{
@@ -359,13 +370,81 @@ clip: rect (0 0 0 0);
 
 .form__btn{
     background-color: var(--primary-color);
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     border: none;
     color: var(--background-color);
     font-size: 20px;
     letter-spacing: 1.1em;
     line-height: 24px;
     cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+.form__btn:hover{
+background-color: var(--hover-color);}
+
+.form__bike-price{
+    font-size: 32px;
+    position: absolute;
+
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 220px;  
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--hover-color);
+    border-radius: 50%;
+    transform: translatex(-50%);
+}
+.form__bike-price::after{
+    content: "";
+    position: absolute;
+    width: 220px;  
+    height: 100px;
+    border: 1px solid var(--hover-color);
+    border-radius: 50%;
+    top: 12px;
 }
 
-/* Resume 1:27:00 */
+.footer{
+    background-color: var(--primary-color);
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__link{
+    color: var(--background-color);
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__social-link +.footer__social-link{
+margin-left: 20px;
+}
+
+.footer__contacts{
+    color: var(--background-color);
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__contacts-link{
+    display: flex;
+    align-items: center;
+}
+.footer__contacts-link+ .footer__contacts-link{
+    margin-top: 10px;
+}
+
+.footer__contacts-img{
+    margin-right: 10px;
+}
